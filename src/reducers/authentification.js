@@ -13,6 +13,5 @@ export default function AuthentificationReducer(state = initialState, action) {
 
     default:
       return state;
-      break;
   }
 }
