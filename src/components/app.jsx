@@ -3,6 +3,7 @@ import Header from "../containers/Header";
 import Home from "./Home";
 import Ressources from "./Ressources";
 import { Switch, Route } from "react-router-dom";
+import RequireAuthentification from "../helpers/RequireAuthentification";
 
 require("../style.css");
 export default class App extends Component {
@@ -12,7 +13,11 @@ export default class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/ressources" component={Ressources} />
+          <Route
+            exact
+            path="/ressources"
+            component={RequireAuthentification(Ressources)}
+          />
         </Switch>
       </div>
     );
