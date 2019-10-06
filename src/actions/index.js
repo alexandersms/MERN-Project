@@ -6,8 +6,11 @@ export function setAuthentification(isLoggedIn) {
       type: SET_AUTHENTIFICATION,
       payload: isLoggedIn
     });
-    dispatch({
-      type: INCREMENT_ACTION_COUNT
-    });
+  };
+}
+
+export function incrementActionCount() {
+  return {
+    type: INCREMENT_ACTION_COUNT
   };
 }
