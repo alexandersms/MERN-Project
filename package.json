@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.5.0",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.3.1",
